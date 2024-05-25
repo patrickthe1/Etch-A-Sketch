@@ -48,13 +48,22 @@ function drawGrid() {
   container.addEventListener("mousemove", handleMouseMove);
   
 
+  function getRandomColor(){
+    const red = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const randomColor = `rgb(${red},${blue},${green})`
+
+    return randomColor;
+  }
+
   function handleMouseMove(e){
    
 
     if(isDrawing){
         let currentSquare = e.target;
         if(currentSquare.classList.contains("square")){
-            currentSquare.style.backgroundColor = "black";
+            currentSquare.style.backgroundColor = getRandomColor();
         }
     }
   }
