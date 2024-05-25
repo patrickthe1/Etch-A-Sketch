@@ -1,6 +1,6 @@
 let container = document.querySelector(".container");
 
-for(let i= 1; i < 256; i++){
+for(let i= 0; i < 256; i++){
     let square = document.createElement("div");
 
     square.classList.add("square");
@@ -57,4 +57,12 @@ function drawGrid() {
             currentSquare.style.backgroundColor = "black";
         }
     }
+  }
+
+  function reset(){
+  let children = container.children;
+
+  Array.from(children).forEach(child =>{
+    child.style.backgroundColor = "rgba(0,0, 0,0.1)";
+  })
   }

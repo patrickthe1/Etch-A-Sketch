@@ -39,13 +39,17 @@ h1{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-#setGrid{
+#setGrid, #reset{
     font-size: 24px;
     color: white;
     background-color: black;
     border: none;
     border-radius: 3px;
     padding: 5px;
+}
+
+.button{
+    margin-left: 50%;
 }
 
 input{
