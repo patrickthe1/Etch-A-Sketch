@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container{
+    height: 512px;
+    width: 512px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto 10px;
+    background-color: rgba(0,0, 0,0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#setGrid{
+    margin: 0 0 0 30.6%;
+}
+
+.square{
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+    /* border: 1px solid black; */
+}
+
+.square:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#setGrid{
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+input{
+    font-size: 24px;
+    color: black;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#setGrid:hover{
+    background-color: #f4f4f4;
+    color: black;
+}
